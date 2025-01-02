@@ -1,0 +1,28 @@
+dataset: Cora
+model: 
+task: node
+ds_path: data
+save_path: saved_model
+custom: 
+lr: 0.01
+drop: 0.1
+decay: 0.0001
+alpha: 0.1
+nhid: 32
+num_layers: 2
+n_runs: 5
+batch: 1024
+epoch: 1000
+d_epoch: 100
+timesteps: 50
+diffusion_noise_schedule: cosine
+pre_step: 2000
+lambda_train: [0.5]
+patience: 50
+seed: 0
+cuda: False
+gpu: 0
+no_diff: False
+no_train: False
+valid: False
+test: False
